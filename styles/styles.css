@@ -17,6 +17,9 @@ body {
     display: flex;
 }
 
+.banner-navbar{
+    padding-top: 2.5rem;
+}
 /* navbar */
 
 .navbar {
@@ -57,11 +60,11 @@ body {
 
 /* banner */
 
-.banner-text{
+.banner-text {
     margin-bottom: 10rem;
 }
 
-.dancing-font{
+.dancing-font {
     font-family: "Dancing Script", cursive;
     font-size: 4.875rem;
     font-weight: 300;
@@ -71,7 +74,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 .banner-text h1 {
@@ -79,7 +82,7 @@ body {
     font-family: Inter;
     font-size: 4.875rem;
     font-weight: 900;
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
     color: rgb(255, 255, 255);
     ;
 }
@@ -87,7 +90,7 @@ body {
 .banner-text p {
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 28px;
+    margin-bottom: 1.75rem;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -173,4 +176,69 @@ body {
     width: 200px;
     height: 95px;
     border: 2px solid red;
+}
+
+/* habits */
+
+.habits { 
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.description h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.description h1,
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.center h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.center p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.center h3,
+p {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.habit-images {
+    display: flex;
+    margin-top: 60px;
+    gap: 6.25rem;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
