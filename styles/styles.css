@@ -14,7 +14,8 @@ body {
 /* shared styles */
 
 .join1,
-.join2 {
+.join2,
+.join3 {
     font-size: 1.125rem;
     font-weight: 600;
     border: none;
@@ -71,8 +72,14 @@ body {
 
 /* banner */
 
+.banner-image img {
+    width: 100%;
+    height: 100%;
+}
+
 .banner-text {
     margin-bottom: 10rem;
+
 }
 
 .dancing-font {
@@ -95,7 +102,7 @@ body {
     font-weight: 900;
     margin-bottom: 1.75rem;
     color: rgb(255, 255, 255);
-    ;
+    text-align: left;
 }
 
 .banner-text p {
@@ -103,6 +110,7 @@ body {
     font-weight: 400;
     margin-bottom: 1.75rem;
     color: rgba(255, 255, 255, 0.5);
+    text-align: left;
 }
 
 .banner-text .join1 {
@@ -233,6 +241,8 @@ p {
 }
 
 img {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -271,6 +281,7 @@ img {
     color: rgb(255, 255, 255);
     font-size: 3rem;
     font-weight: 900;
+    text-align: left;
 }
 
 .marketing p {
@@ -285,6 +296,119 @@ img {
     padding: 15px 60px;
     margin-top: 40px;
 }
-.marketing{
+
+.marketing {
     margin-top: 7.5rem;
+}
+
+/* BMI section */
+
+.bmi-description p,
+h1 {
+    text-align: center;
+}
+
+.bmi {
+    width: 100%;
+    margin-top: 100px;
+    /* padding: 50px 190px; */
+    background: rgb(34, 34, 34);
+    display: flex;
+}
+
+.bmi-description p,
+table td,
+.calculate p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.join3 {
+    padding: 15px 60px;
+}
+
+.bmi-description h1 {
+    font-size: 3rem;
+}
+
+.bmi-description h2,
+.chart h2 {
+    font-size: 1.75rem;
+}
+
+.bmi-description h1,
+.chart h2,
+.calculate h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid rgb(255, 255, 255, 0.3);
+}
+
+.hide {
+    display: none;
+}
+
+/* Team section */
+
+.team1,
+.team2,
+.team3,
+.team4,
+.team5,
+.team6 {
+    position: relative;
+}
+
+.team1 h4,
+.team2 h4,
+.team3 h4,
+.team4 h4,
+.team5 h4,
+.team6 h4 {
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.team1 p,
+.team2 p,
+.team3 p,
+.team4 p,
+.team5 p,
+.team6 p {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.team img{
+    border-radius: 18px 18px 18px 18px;
+    opacity: 0.8;
+}
+
+.team {
+    padding: 20px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    row-gap: 15px;
 }
