@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 
@@ -33,6 +35,11 @@ body {
 }
 
 /* navbar */
+
+.fa-solid {
+    color: white;
+    visibility: hidden;
+}
 
 .navbar {
     justify-content: space-between;
@@ -73,26 +80,25 @@ body {
 /* banner */
 
 .banner-image img {
-    width: 100%;
-    height: 100%;
-}
-
-.banner-text {
-    margin-bottom: 10rem;
-
+    border-radius: 2px 2px 2px 2px;
+    width: 350px;
+    height: 580px;
 }
 
 .dancing-font {
-    font-family: "Dancing Script", cursive;
-    font-size: 4.875rem;
+    font-family: 'Miama', sans-serif;
     font-weight: 300;
 }
 
 .banner-container {
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     width: 80%;
     margin: 0 auto;
+}
+
+.banner-text {
+    margin-top: 100px;
 }
 
 .banner-text h1 {
@@ -100,9 +106,9 @@ body {
     font-family: Inter;
     font-size: 4.875rem;
     font-weight: 900;
-    margin-bottom: 1.75rem;
     color: rgb(255, 255, 255);
     text-align: left;
+    line-height: 90px;
 }
 
 .banner-text p {
@@ -208,18 +214,13 @@ body {
     font-family: Inter;
     font-size: 1rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .description h1 {
     color: rgb(255, 255, 255);
     font-size: 3rem;
     font-weight: 900;
-}
-
-.description h1,
-p {
-    text-align: center;
-    margin-top: 10px;
 }
 
 .center h3 {
@@ -352,11 +353,11 @@ td {
     border: 1px solid rgb(255, 255, 255, 0.3);
 }
 
-.hide {
-    display: none;
-}
-
 /* Team section */
+
+.team-description {
+    margin-top: 100px;
+}
 
 .team1,
 .team2,
@@ -415,7 +416,7 @@ td {
 
 /* footer section */
 
-.footer{
+.footer {
     margin-top: 100px;
     background: rgba(255, 255, 255, 0.1);
     padding: 80px 220px;
@@ -475,7 +476,187 @@ hr {
     margin-top: 20px;
 }
 
-.reserve p{
+.reserve p {
     text-align: center;
     margin-top: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* for smaller devices */
+
+@media screen and (max-width:596px) {
+
+    .banner-container,
+    .habit-images,
+    .marketing,
+    .footer-section {
+        flex-direction: column;
+    }
+
+    /* banner-responsive */
+
+    .banner-navbar {
+        width: 100%;
+    }
+
+    .banner-text {
+        margin-top: auto;
+    }
+
+    .banner-container {
+        margin-top: 40px;
+    }
+
+    .join1 span {
+        display: none;
+    }
+
+    .banner-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .contents {
+        width: 145.91px;
+        height: 74.09px;
+    }
+
+    .offer h5,
+    .banner-text p,
+    .join1,
+    .Download {
+        font-size: 16px;
+    }
+
+    .offer p {
+        font-size: 12px;
+    }
+
+    .offer-2 h5 {
+        font-size: 30px;
+    }
+
+    .offer-2 p {
+        font-size: 8px;
+    }
+
+    .contents {
+        border: none;
+        bottom: 320px;
+        right: 5px;
+    }
+
+    .contents-2 {
+        border: none;
+        left: 200px;
+        top: -620px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .fa-solid {
+        visibility: visible;
+    }
+
+    .banner-text .join1 {
+        padding: 16px 30px;
+    }
+
+    .banner-text .Download {
+        padding: 16px 18px;
+    }
+
+    .join1,
+    .Download {
+        /* display: inline; */
+        text-align: center;
+    }
+
+    /* habit-responsive */
+
+    .description h1,
+    .marketing h1 {
+        font-size: 30px;
+    }
+
+    .description p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .habits {
+        width: 100%;
+        margin-top: -150px;
+    }
+
+    .center p {
+        text-align: center;
+    }
+
+    .center {
+        margin-top: -30px;
+    }
+
+    /* marketing responsive */
+
+    .marketing img {
+        width: 100%;
+        height: 40%;
+        margin-top: 40px;
+    }
+
+    .marketing {
+        padding: 20px 30px;
+        width: 80%;
+    }
+
+    .marketing p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .join2 {
+        width: 100%;
+    }
+
+    /* team responsive */
+
+    .team1,
+    .team4 {
+        display: none;
+    }
+
+    .team-description {
+        margin: 50px 45px;
+    }
+
+    .team {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+
+    /* footer responsive*/
+
+    .f-2,
+    .f-3 {
+        margin-top: 40px;
+    }
+
+    .footer hr {
+        width: 90%;
+    }
+
+    .footer {
+        padding: 20px 20px;
+    }
+
+    .f-1 p {
+        font-size: 12px;
+    }
 }
