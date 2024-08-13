@@ -195,7 +195,6 @@ body {
     background: rgba(45, 45, 45, 0.54);
     width: 200px;
     height: 95px;
-    border: 2px solid red;
 }
 
 /* habits */
@@ -221,6 +220,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 3rem;
     font-weight: 900;
+    text-align: center;
 }
 
 .center h3 {
@@ -233,6 +233,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.875rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .center h3,
@@ -304,17 +305,37 @@ img {
 
 /* BMI section */
 
+.bmi-calculator {
+    margin-top: 100px;
+}
+
+.bmi-description {
+    width: 40%;
+    margin: 0 auto;
+}
+
 .bmi-description p,
 h1 {
-    text-align: center;
+    text-align: left;
 }
 
 .bmi {
-    width: 100%;
-    margin-top: 100px;
-    /* padding: 50px 190px; */
+    margin-top: 90px;
+    padding: 50px 50px;
     background: rgb(34, 34, 34);
     display: flex;
+    justify-content: space-around;
+}
+
+
+.chart {
+    margin-bottom: 50px;
+}
+
+.chart table {
+    margin-top: 50px;
+    width: 310px;
+    height: 216px;
 }
 
 .bmi-description p,
@@ -351,6 +372,35 @@ table {
 
 td {
     border: 1px solid rgb(255, 255, 255, 0.3);
+    padding: 15px;
+}
+
+thead td {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-value {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.input-value input,
+select {
+    color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.span {
+    grid-column: span 2;
 }
 
 /* Team section */
@@ -493,7 +543,8 @@ hr {
     .banner-container,
     .habit-images,
     .marketing,
-    .footer-section {
+    .footer-section,
+    .bmi {
         flex-direction: column;
     }
 
@@ -659,4 +710,51 @@ hr {
     .f-1 p {
         font-size: 12px;
     }
+
+    /* bmi- calculator responsive */
+    
+    .bmi-description{
+        width: 90%;
+    }
+    
+    .bmi-description h1{
+        font-size: 30px;
+    }
+
+    .bmi-description p{
+        font-size: 14px;
+    }
+
+    .bmi{
+        padding: 10px 20px;
+    }
+
+    .calculate h2, .chart h2{
+        font-size: 16px;
+    }
+
+    .calculate p, .chart p{
+        font-size: 14px;
+    }
+    
+    table{
+        width: 250px;
+        height: 150px;
+    }
+
+    .span{
+        width: 98%;
+    }
+
+    .Sex{
+        width: 95%;
+    }
+
+    .Weight{
+        width: 85%;
+    }
+     
+  .input-value input, select{
+    padding-right: 5px;
+  }
 }
