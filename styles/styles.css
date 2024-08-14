@@ -678,6 +678,10 @@ hr {
 
     /* team responsive */
 
+    .team img{
+        height: auto;
+    }
+
     .team1,
     .team4 {
         display: none;
@@ -712,49 +716,52 @@ hr {
     }
 
     /* bmi- calculator responsive */
-    
-    .bmi-description{
+
+    .bmi-description {
         width: 90%;
     }
-    
-    .bmi-description h1{
+
+    .bmi-description h1 {
         font-size: 30px;
     }
 
-    .bmi-description p{
+    .bmi-description p {
         font-size: 14px;
     }
 
-    .bmi{
+    .bmi {
         padding: 10px 20px;
     }
 
-    .calculate h2, .chart h2{
+    .calculate h2,
+    .chart h2 {
         font-size: 16px;
     }
 
-    .calculate p, .chart p{
+    .calculate p,
+    .chart p {
         font-size: 14px;
     }
-    
-    table{
+
+    table {
         width: 250px;
         height: 150px;
     }
 
-    .span{
+    .span {
         width: 98%;
     }
 
-    .Sex{
+    .Sex {
         width: 95%;
     }
 
-    .Weight{
-        width: 85%;
+    .Weight {
+        width: 88%;
     }
-     
-  .input-value input, select{
-    padding-right: 5px;
-  }
+
+    .input-value input,
+    select {
+        padding-right: 5px;
+    }
 }
